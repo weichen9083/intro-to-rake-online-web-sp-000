@@ -4,7 +4,8 @@ task :hello do
 end
 
 task :environment do 
-  require_ral
+  require_relative './config/environment'
+  end 
 
 namespace :db do 
   desc 'migrate changes to your database'
